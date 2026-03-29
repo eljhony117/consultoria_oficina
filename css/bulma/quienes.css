@@ -57,39 +57,24 @@
   object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
 
-/* --- Estilos para el Footer de Consultoria --- */
-
-/* Estilo para el logo del footer (parecido al anterior pero más pequeño) */
-.footer-logo {
-    font-family: "Arial Black", "Impact", sans-serif; 
-    color: hsl(204, 86%, 53%); /* El mismo azul de tu logo */
-    font-weight: 900;
-    text-shadow: 1px 1px 0px #333; /* Sombra sutil para fondo oscuro */
+.title-nosotros {
+  font-family: "Arial Black", "Impact", sans-serif; 
+  font-size: 2.2rem;
+  color: hsl(204, 86%, 53%);
+  font-weight: 900;
+  text-transform: none;
+  
+  /*Sombreado para el efecto de relieve gris*/
+  text-shadow: 3px 3px 0px #e0e0e0; 
 }
 
-/* Estilos para las listas de enlaces */
-.footer-links ul {
-    list-style: none; /* Quitamos las viñetas */
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 0.5rem; /* Espacio entre links */
-}
-
-/* Estilos para los enlaces (a) */
-.footer-links a {
-    color: hsl(0, 0%, 86%); /* Gris claro por defecto */
-    text-decoration: none; /* Quitamos el subrayado */
-    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
-    font-size: 0.9rem;
-}
-
-/* Efecto al pasar el mouse (hover) */
-.footer-links a:hover {
-    color: white; /* Se vuelve blanco puro */
-    text-decoration: underline; /* Aparece subrayado */
+/* Además, podemos estilizar tu título grande para que se parezca al logo anterior */
+.title-nosotros {
+  font-family: "Arial Black", "Impact", sans-serif; 
+  font-size: 3rem;
+  color: hsl(204, 86%, 53%); /* El mismo azul de tu logo */
+  font-weight: 900;
+  text-shadow: 2px 2px 0px #e0e0e0; /* Un pequeño efecto de relieve */
 }
 
 /* --- Estilos para el Hero/Banner Principal con Overlay Oscuro --- */
