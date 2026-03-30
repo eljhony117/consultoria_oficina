@@ -115,3 +115,20 @@
     text-transform: uppercase; /* Todo en mayúsculas */
     letter-spacing: 1px; /* Espaciado entre letras sutil */
 }
+
+.section-title-mision {
+  font-family: "Arial Black", "Impact", sans-serif; 
+  font-size: 3rem;
+  color: hsl(204, 86%, 53%); /* El mismo azul de tu logo */
+  font-weight: 900;
+  text-shadow: 2px 2px 0px #e0e0e0; /* Un pequeño efecto de relieve */
+}
+
+.section-title-mision::after {
+  content: "";
+  display: block;
+  width: 1336px; /* Ancho de la línea */
+  height: 4px; /* Grosor de la línea */
+  background-color: hsl(204, 86%, 53%); /* El mismo azul de tu logo */
+  margin-top: 8px; /* Espacio entre el título y la línea */
+}

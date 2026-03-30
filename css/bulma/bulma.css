@@ -130,3 +130,67 @@
     text-transform: uppercase; /* Todo en mayúsculas */
     letter-spacing: 1px; /* Espaciado entre letras sutil */
 }
+
+/* --- Estilos para la sección de Pasos --- */
+
+/* 1. La línea azul debajo del título */
+.section-title-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  color: #0072b1 !important; /* El color azul de tus imágenes */
+  font-weight: bold;
+}
+
+
+/* This is for the section title line */
+.section-title-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* Largo de la línea */
+  height: 3px; /* Grosor de la línea */
+  background-color: #0072b1;
+}
+
+/* 2. Contenedor de cada paso */
+.paso-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* 3. El número gigante gris de fondo */
+.paso-numero {
+  position: absolute;
+  left: 15%; /* Lo empujamos un poco a la izquierda */
+  font-size: 8rem; /* Tamaño gigante */
+  font-weight: 900;
+  color: #e8ecef; /* Gris muy clarito */
+  font-family: "Arial Black", "Impact", sans-serif;
+  z-index: 0; /* Lo mandamos al fondo */
+  line-height: 1;
+}
+
+/* 4. El contenido (Icono + Texto) que va por encima */
+.paso-contenido {
+  position: relative;
+  z-index: 1; /* Lo traemos al frente para que tape un poco al número */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- MAGIA PARA CELULARES (Responsive) --- */
+/* Esto le dice a la página: "Si la pantalla es de celular, cambia esto" */
+@media (max-width: 768px) {
+  .paso-numero {
+    left: 0; /* Pegamos el número totalmente a la izquierda de la pantalla */
+    font-size: 7rem; /* Lo hacemos un pelín más pequeño para que no estorbe */
+  }
+}
