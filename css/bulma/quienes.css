@@ -132,3 +132,19 @@
   background-color: hsl(204, 86%, 53%); /* El mismo azul de tu logo */
   margin-top: 8px; /* Espacio entre el título y la línea */
 }
+
+
+
+
+/* Solo afecta a pantallas de tablet para abajo (menú móvil de Bulma) */
+@media (max-width: 1023px) {
+  /* 1. Escondemos las opciones por defecto */
+  #dropdown-mas .navbar-dropdown {
+    display: none;
+  }
+  
+  /* 2. Las mostramos SOLO cuando JavaScript le agregue esta clase especial */
+  #dropdown-mas.is-open-mobile .navbar-dropdown {
+    display: block;
+  }
+}
